@@ -4,6 +4,7 @@
   "description": "Student Training - Demonstrate basic best practices for web app devlopment",
   "main": "app.js",
   "scripts": {
+    "dev": "env NODE_ENV=dev node app.js",
     "start": "node app.js",
     "test": "echo 'tests are a later lesson, but typically necessary'"
   },
@@ -24,6 +25,8 @@
   },
   "homepage": "https://github.com/RileyR387/apps-garage-HUD#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "config": "^3.2.5",
+    "express": "^4.17.1",
+    "js-yaml": "^3.13.1"
   }
 }

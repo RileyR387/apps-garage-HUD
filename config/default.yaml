@@ -1,0 +1,6 @@
+---
+name: 'Apps-Garage HUD - Demo Config'
+
+server:
+  port: 8080
+

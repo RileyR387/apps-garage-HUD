@@ -25,6 +25,11 @@ app.set('view engine', 'ejs')
 app.use("/static/", express.static(path.join(__dirname, 'static')))
 
 app.get('/', (req, res) => {
+  /**
+   * No.. this inline object shouldn't live in the middle of our route control code...
+   * Ideally, it would come from 'model' code.. and model code will be retrieving it from somewhere else (config/db/directory)
+   * Probably config in this special scenario!
+   */
   let contactGroups = [
     {
       name: 'Applications',

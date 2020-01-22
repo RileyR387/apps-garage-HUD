@@ -26,6 +26,7 @@
   "homepage": "https://github.com/RileyR387/apps-garage-HUD#readme",
   "dependencies": {
     "config": "^3.2.5",
+    "ejs": "^3.0.1",
     "express": "^4.17.1",
     "js-yaml": "^3.13.1"
   }

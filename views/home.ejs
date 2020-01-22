@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+   <link rel='stylesheet' href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+   <link rel="stylesheet" href="/static/styles.css" />
+   <title>Apps-Garage HUD</title>
+</head>
+<body>
+  <div class="p-3 contactContainer">
+    <div class="row justify-content-center">
+    <% contactGroups.forEach((group) => { %>
+      <div class="col-xs-2 text-center p-2 contact-group">
+        <h2 class="lead contact-label">
+          <%= group.name %>
+        </h2>
+        <ul class="list-group contact-list">
+          <% group.contacts.forEach((contact) => { %>
+            <li class="list-group-item text-left"><%= contact.name %> <span class="float-right"><%= contact.ext %></span></li>
+          <% }); %>
+        </ul>
+      </div><!-- .contact-group -->
+    <% }); %>
+    </div>
+  </div><!-- .contactContainer -->
+  <!-- snipping footer for now -->
+  <!--
+  <div class="footer mt-auto">
+    <div class="container">
+      <div class="navbar-text">© Angelo State University</div>
+    </div>
+  </div>
+  -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="/static/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "apps-garage-hud",
+  "version": "0.0.1",
+  "description": "Student Training - Demonstrate basic best practices for web app devlopment",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo 'tests are a later lesson, but typically necessary'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RileyR387/apps-garage-HUD.git"
+  },
+  "keywords": [
+    "training",
+    "config",
+    "templates",
+    "frameworks"
+  ],
+  "author": "Riley Raschke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RileyR387/apps-garage-HUD/issues"
+  },
+  "homepage": "https://github.com/RileyR387/apps-garage-HUD#readme"
+}

@@ -4,7 +4,9 @@
   "description": "Student Training - Demonstrate basic best practices for web app devlopment",
   "main": "app.js",
   "scripts": {
-    "dev": "env NODE_ENV=dev node app.js",
+    "demo": "gulp",
+    "dev": "env NODE_ENV=dev gulp",
+    "devserver": "env NODE_ENV=dev nodemon app.js",
     "start": "node app.js",
     "test": "echo 'tests are a later lesson, but typically necessary'"
   },
@@ -30,5 +32,10 @@
     "express": "^4.17.1",
     "express-partials": "^0.3.0",
     "js-yaml": "^3.13.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-livereload": "^4.0.2",
+    "nodemon": "^2.0.2"
   }
 }

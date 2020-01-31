@@ -7,7 +7,7 @@
         </h2>
         <ul class="list-group contact-list">
           <% group.contacts.forEach((contact) => { %>
-            <li class="list-group-item text-left"><%= contact.name %> <span class="float-right"><%= contact.ext %></span></li>
+            <li class="list-group-item text-left"><strong><%= contact.name %></strong> <span class="float-right"><%= contact.ext %></span></li>
           <% }); %>
         </ul>
       </div><!-- .contact-group -->

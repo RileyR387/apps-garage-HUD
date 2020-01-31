@@ -28,6 +28,8 @@ app.use("/static/", express.static(path.join(__dirname, 'static')))
 
 app.get('/', (req, res) => {
   let contactGroups =  config.contactGroups
+  //let contactGroups = [{ name: 'Applications',contacts: [{name: 'Riley', ext: '0101'},{name: 'OtherPerson', ext: '0102'}]}]
+
   res.render('home', { contactGroups: contactGroups })
 });
 
